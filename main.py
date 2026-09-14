@@ -1,8 +1,15 @@
 def main():
+    tasks = [
+        "Изучить Git",
+        "Выполнить лабораторную работу",
+        "Отправить проект на GitHub",
+    ]
+
     print("Учебный трекер")
-    print("1. Изучить Git")
-    print("2. Выполнить лабораторную работу")
-    print("3. Отправить проект на GitHub")
+    print("Задачи на сегодня:")
+
+    for number, task in enumerate(tasks, start=1):
+        print(f"{number}. {task}")
 
 
 if __name__ == "__main__":
